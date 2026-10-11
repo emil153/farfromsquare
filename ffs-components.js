@@ -35,7 +35,7 @@
 
   const FFS_DATA = {
     /** Order used by the home section and by "Next project". */
-    order: ['area-52', 'casa-bala', 'saudi-f1-fan-zone', 'sofia-high-school'],
+    order: ['area-52', 'casa-bala', 'saudi-f1-fan-zone', 'sgi-office', 'sofia-high-school'],
 
     home: {
       eyebrow: 'Projects',
@@ -264,6 +264,113 @@
         outcome: {
           label: 'Around the table',
           statement: 'A place where family tradition continues, and new traditions begin around the table.',
+          metrics: []
+        }
+      },
+
+      /* ------------------------------------------------------------------
+       * SGI OFFICE
+       * Source: "Soul & Structure: Where Life Takes Shape" brief. Research
+       * figures are third-party studies quoted in the brief, always shown
+       * with their source. They are context, not results of this building.
+       * ---------------------------------------------------------------- */
+      'sgi-office': {
+        slug: 'sgi-office',
+        aliases: ['sgioffice', 'sgi'],
+        name: 'SGI Office',
+        theme: { mode: 'light', accent: '#B4602B' }, // Corten, sampled from the façade
+        facts: [
+          ['Location', 'Sofia, Bulgaria'],
+          ['Type', 'Architecture studio'],
+          ['Client', 'SGI Architects & Masterplanners'],
+          ['Energy', 'Mostly solar']
+        ],
+        proposition: 'Where life takes shape.',
+        why: 'A workplace has to earn people’s presence.',
+        heroImage: { id: 'c03b98_af64be518a9e461bb87aa4dd2a2fe05f~mv2.jpg', file: 'sgi-facade', alt: 'The SGI office entrance: a perforated Corten steel façade with ivy growing across it, beside a planted garden', ratio: 2400 / 1601 },
+        homeImage: { id: 'c03b98_af64be518a9e461bb87aa4dd2a2fe05f~mv2.jpg', file: 'sgi-facade', alt: 'The SGI office façade in perforated Corten steel with a living green wall', ratio: 2400 / 1601 },
+
+        question: {
+          label: 'The question',
+          lead: 'What does the team need to do its best work? And what should a client feel when they walk through the door?',
+          problems: [
+            '1 in 6 people worldwide report feeling lonely.',
+            'Bulgaria is among the four EU countries with the highest levels of loneliness.',
+            'In the US, socialising with colleagues in person has nearly doubled since the pandemic.'
+          ],
+          joinsTo: [
+            { source: 'World Health Organization' },
+            { source: 'EU loneliness survey' },
+            { source: 'Gensler, 16,800 office workers' }
+          ]
+        },
+
+        whyBlock: {
+          statement: 'A workplace has to earn people’s presence.',
+          body: 'SGI’s manifesto commits the practice to buildings with both soul and structure: a space is defined not only by its physical form, but by how it makes people feel. Their new office put that principle to work.',
+          dnaLabel: 'The manifesto',
+          dna: ['Soul', 'Structure']
+        },
+
+        irl: {
+          label: 'The IRL',
+          title: 'Space for focus, and for each other.',
+          body: 'The fully open-plan office promised connection but often delivered the opposite. So the layout combines limited open plan with private spaces where teams can work undisturbed. At its heart are two large social dining spaces: one in the garden, one downstairs where staff cook and eat together.',
+          device: 'images',
+          images: [
+            { id: 'c03b98_2169ff6ad1b24956ad808d0dcd9cde42~mv2.jpg', file: 'sgi-lounge', alt: 'A lounge corner with a pink armchair and bookshelves, the open-plan studio beyond', ratio: 2400 / 1601, caption: 'Limited open plan, with quiet corners', slot: 'sgi-lounge' },
+            { id: 'c03b98_70bfdb2e85c141b38229547ceea44e14~mv2.jpg', file: 'sgi-dining', alt: 'The downstairs kitchen with a long shared table and orange chairs', ratio: 2400 / 1601, caption: 'A shared table flattens hierarchy', slot: 'sgi-dining' }
+          ]
+        },
+
+        story: {
+          label: 'The story',
+          title: 'Structure that supports life.',
+          body: 'The façade is the brand in a single gesture. Some of the most important decisions are invisible. Each layer of the building answers the same manifesto.',
+          device: 'materials',
+          materials: [
+            { name: 'Corten steel', swatch: '#9A4E24', text: 'The structure: durable, honest and weathering naturally over time.' },
+            { name: 'A living green wall', swatch: '#4E7A3A', text: 'Growing across the façade’s frame, creating habitat for urban wildlife such as birds and bats.' },
+            { name: 'Air', swatch: '#B9C6C9', text: 'Smart systems monitor CO₂ across the office and filter the air, because air quality shapes how well people think.' },
+            { name: 'Sun', swatch: '#E0B83C', text: 'Most of the office’s energy comes from a bank of solar panels, with the same smart systems managing efficiency.' },
+            { name: 'Grow light', swatch: '#6C8F4E', text: 'In the basement, where daylight is scarce, a large green wall under grow lighting compensates for what cannot be replicated.' }
+          ]
+        },
+
+        structure: {
+          label: 'From story to structure',
+          title: 'A manifesto you can walk through.',
+          device: 'ledger',
+          intro: 'The test: can someone who has never read the manifesto walk through the building and understand what it stands for? Each value became a physical decision, and each decision is grounded in evidence.',
+          heads: ['Brand value', 'Design decision', 'What people experience'],
+          rows: [
+            { cells: ['Structure as a foundation for beauty.', 'A Corten façade holding a living green wall.', 'A threshold that is solid, warm and alive.'], evidence: 'People who viewed a green roof for 40 seconds made significantly fewer errors on an attention task than those who viewed bare concrete.', source: 'University of Melbourne' },
+            { cells: ['Buildings that breathe.', 'CO₂ monitoring, air filtration and solar energy.', 'Clear heads and a lighter footprint, unseen but felt.'], evidence: 'Cognitive scores were 61% higher in green building conditions, and 101% higher with enhanced ventilation, than in a conventional building.', source: 'Harvard, double-blind study' },
+            { cells: ['Connection to nature.', 'Plants throughout, and a lit green wall in the basement.', 'Calm, even where daylight is scarce.'], evidence: 'Enriching a previously Spartan office with plants increased productivity by 15%. Office workers with windows slept 46 minutes more per night.', source: 'Field experiments in UK and Dutch offices · Northwestern and Illinois' },
+            { cells: ['Human connection.', 'Private team spaces and shared dining.', 'Room to focus, and a table where hierarchy dissolves.'], evidence: 'Moving into open plan cut face-to-face interaction by about 70%. Fire platoons that ate together most often scored higher on team performance.', source: 'Harvard · Cornell, 15-month study' }
+          ]
+        },
+
+        place: {
+          label: 'The place',
+          title: 'SGI, Sofia.',
+          images: [
+            { id: 'c03b98_d0e9e738f3c24879a079484d381b140b~mv2.jpg', file: 'sgi-green-wall', alt: 'The basement lounge beside a large living green wall, a meeting room behind', ratio: 2400 / 1601, caption: 'The lit green wall: calm where daylight is scarce', size: 'wide', slot: 'sgi-green-wall' },
+            { id: 'c03b98_fadb8f2d14bc4ae38b33ad4171de8cb4~mv2.jpg', file: 'sgi-facade-detail', alt: 'Ivy on the perforated Corten façade beside a window', ratio: 4 / 5, caption: 'Corten and ivy: structure that supports life', size: 'half', slot: 'sgi-facade-detail' },
+            { id: 'c03b98_63f32070065a483d999965c91dc8fa5b~mv2.jpg', file: 'sgi-open-plan', alt: 'The open-plan studio with desks divided by planters', ratio: 4 / 5, caption: 'Plants throughout', size: 'half', slot: 'sgi-open-plan' },
+            { id: 'c03b98_35bbad95de164a1a8e0dca02709f0b14~mv2.jpg', file: 'sgi-art-landing', alt: 'A woman walking past a large artwork on the stair landing', ratio: 2400 / 1601, caption: 'Soul in the details', size: 'wide', slot: 'sgi-art-landing' }
+          ]
+        },
+
+        outcome: {
+          label: 'Brand-led placemaking in action',
+          statement: 'Brand and wellbeing are not separate briefs.',
+          body: 'When a building is designed around what its people genuinely need, it becomes the clearest expression of what the organisation believes.',
+          points: [
+            { title: 'Consistency', text: '“Where life takes shape” is not only a strap line on a website. It is the first thing a visitor sees growing across the façade.' },
+            { title: 'Proof before promise', text: 'For an architecture practice, the office is the most honest portfolio piece there is. Clients experience the approach before seeing a single project.' },
+            { title: 'Evidence as the bridge', text: 'Linking each decision to research turns brand values into criteria that can be measured and improved as the building evolves.' }
+          ],
           metrics: []
         }
       },
@@ -698,7 +805,7 @@
 .ffs-ledger__cell{position:relative;padding:.4rem 0 .4rem 1.75rem;min-width:0}
 .ffs-ledger__cell::before{content:attr(data-head);display:block;font-size:var(--step--1);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ffs-muted);margin-bottom:.25rem}
 .ffs-ledger__cell::after{content:'';position:absolute;left:.45rem;top:.9rem;bottom:-.5rem;width:1px;background:currentColor;transform-origin:top;transform:scaleY(var(--draw,1));transition:transform var(--d2) var(--ease)}
-.ffs-ledger__cell:last-child::after{display:none}
+.ffs-ledger__cell:last-child::after,.ffs-ledger__cell:nth-child(3)::after{display:none}
 .ffs-ledger__cell .ffs-dot{position:absolute;left:0;top:.75rem;width:.95rem;height:.95rem;background:currentColor;clip-path:var(--skew)}
 .ffs-ledger__tag{font-family:var(--font-ui)!important;font-size:var(--step--1)!important;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ffs-muted);margin-bottom:.4rem}
 .ffs-ledger__cell:first-child p{font-family:var(--font-display);font-size:var(--step-1);line-height:1.25}
@@ -745,6 +852,17 @@
   .ffs-stop::before{top:-2.75rem}
   .ffs-stop:last-child h3{color:var(--ffs-accent)}
 }
+
+.ffs-ledger__ev{grid-column:1/-1;margin-top:1rem;padding:.9rem 1.1rem;background:rgba(31,28,25,.07);font-size:.92rem;line-height:1.5;max-width:none}
+.ffs[data-mode="dark"] .ffs-ledger__ev{background:rgba(243,237,227,.06)}
+.ffs-ledger__ev .ffs-label{margin-right:.5rem;color:inherit}
+.ffs-ledger__ev cite{display:block;margin-top:.35rem;font-style:normal;font-size:var(--step--1);letter-spacing:.08em;text-transform:uppercase;color:var(--ffs-muted)}
+.ffs-cell__src{text-transform:none!important;letter-spacing:.04em!important;font-weight:500!important}
+.ffs-points{display:grid;gap:1.5rem;margin-top:clamp(2.5rem,5vw,4rem);counter-reset:pt}
+.ffs-points li{border-top:2px solid var(--ffs-accent);padding-top:1rem;display:grid;gap:.5rem;min-width:0}
+.ffs-points h3{font-family:var(--font-display);font-weight:400;font-size:var(--step-1)}
+.ffs-points p{color:var(--ffs-muted)}
+@media (min-width:900px){.ffs-points{grid-template-columns:repeat(3,minmax(0,1fr));gap:2.5rem}}
 
 /* 07 Place */
 .ffs-place__head{display:grid;gap:1rem;margin-bottom:clamp(2rem,4vw,3.5rem)}
@@ -1031,6 +1149,7 @@
       function cellJoin(j) {
         if (!j) return '';
         if (typeof j === 'string') return `<p class="ffs-cell__w">${esc(j)} wellbeing</p>`;
+        if (j.source) return `<p class="ffs-cell__w ffs-cell__src">${esc(j.source)}</p>`;
         return `<div class="ffs-cell__w"><p class="ffs-cell__dna">${esc(j.dna)}</p><p>${esc(j.wellbeing)}</p></div>`;
       }
       const qwHtml = ch('why', 'The why', `
@@ -1159,7 +1278,7 @@
         <div class="ffs-ledger" role="table" aria-label="${esc(s.title)}">
           <div class="ffs-ledger__heads" role="row">${s.heads.map((hd) => `<span class="ffs-label" role="columnheader">${esc(hd)}</span>`).join('')}</div>
           ${s.rows.map((row) => { const r = Array.isArray(row) ? row : row.cells; const tag = Array.isArray(row) ? '' : row.tag; return `<div class="ffs-ledger__row" role="row" data-reveal>${r.map((c, i) => `
-            <div class="ffs-ledger__cell" role="cell" data-head="${esc(s.heads[i])}"><span class="ffs-dot" aria-hidden="true"></span>${i === 0 && tag ? `<p class="ffs-ledger__tag">${esc(tag)}</p>` : ''}<p>${t(c)}</p></div>`).join('')}</div>`; }).join('')}
+            <div class="ffs-ledger__cell" role="cell" data-head="${esc(s.heads[i])}"><span class="ffs-dot" aria-hidden="true"></span>${i === 0 && tag ? `<p class="ffs-ledger__tag">${esc(tag)}</p>` : ''}<p>${t(c)}</p></div>`).join('')}${!Array.isArray(row) && row.evidence ? `<p class="ffs-ledger__ev" role="note"><span class="ffs-label">Evidence</span> ${t(row.evidence)}${row.source ? ` <cite>${esc(row.source)}</cite>` : ''}</p>` : ''}</div>`; }).join('')}
         </div>`;
       const s2sHtml = ch('structure', 'Story to structure', `
         <section class="ffs-s2s ffs-section" data-ch aria-labelledby="${id('s2s-h')}">
@@ -1167,6 +1286,7 @@
             <div class="ffs-s2s__head" data-reveal>
               <p class="ffs-label">${esc(s.label)}</p>
               <h2 id="${id('s2s-h')}" class="ffs-display">${t(s.title)}</h2>
+              ${s.intro ? `<p class="ffs-lead">${t(s.intro)}</p>` : ''}
             </div>
             ${sDevice}
             ${ledger}
@@ -1196,6 +1316,7 @@
             <p class="ffs-label">${esc(o.label)}</p>
             <h2 id="${id('out-h')}" class="ffs-display">${t(o.statement)}</h2>
             ${o.body ? `<p class="ffs-lead" style="margin-top:1.5rem">${t(o.body)}</p>` : ''}
+            ${o.points && o.points.length ? `<ol class="ffs-points" role="list">${o.points.map((pt) => `<li><h3>${esc(pt.title)}</h3><p>${t(pt.text)}</p></li>`).join('')}</ol>` : ''}
             ${o.metrics.length ? `<dl class="ffs-metrics">${o.metrics.map((m) => `<div><dt class="ffs-label">${esc(m.label)}</dt><dd><b>${esc(m.value)}</b></dd></div>`).join('')}</dl>` : ''}
           </div>
         </section>`);
