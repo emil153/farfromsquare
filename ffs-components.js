@@ -35,7 +35,7 @@
 
   const FFS_DATA = {
     /** Order used by the home section and by "Next project". */
-    order: ['area-52', 'sofia-high-school', 'saudi-f1-fan-zone'],
+    order: ['area-52', 'casa-bala', 'saudi-f1-fan-zone', 'sofia-high-school'],
 
     home: {
       eyebrow: 'Projects',
@@ -159,6 +159,116 @@
       },
 
       /* ------------------------------------------------------------------
+       * CASA BALA
+       * Source: "Casa Bala Restaurant" brief (Bulgarian original + English
+       * translation). Use of Krasimir Balakov's name and image approved.
+       * ---------------------------------------------------------------- */
+      'casa-bala': {
+        slug: 'casa-bala',
+        aliases: ['casabala'],
+        liveSlug: 'casabala',             // the URL the site uses. Must match the CMS item's page link
+        name: 'Casa Bala',
+        theme: { mode: 'dark', accent: '#C9A06A' }, // brass, sampled from the pendant lights in the renders
+        facts: [
+          ['Type', 'Restaurant and museum'],
+          ['Owner', 'Krasimir Balakov'],
+          ['Cuisine', 'Mediterranean']
+        ],
+        proposition: 'Built brick by brick.',
+        why: 'A life and career, built brick by brick.',
+        heroImage: { id: 'c03b98_4e8f8d7981024e6a8c102c347fe8fe0a~mv2.jpg', file: 'cb-dining-room', alt: 'The Casa Bala dining room: arched brick walls, timber columns and a backlit wall of glass panels', ratio: 1896 / 1266, caption: 'The dining room', slot: 'cb-dining-room' },
+        homeImage: { id: 'c03b98_08f89419cde74a99a9fb75904f1736d4~mv2.jpg', file: 'cb-private-room', alt: 'A private dining room with a table inlaid with football pitch lines', ratio: 1902 / 1266, slot: 'cb-private-room' },
+
+        question: {
+          label: 'The question',
+          lead: 'How do you turn a legend’s career into a place people want to sit down in?',
+          problems: [],
+          joinsTo: []
+        },
+
+        whyBlock: {
+          statement: 'A life and career, built brick by brick.',
+          body: 'Not a decorated room, but a temple of history. The interior gives physical expression to years of hard work, perseverance and sporting achievement.',
+          dnaLabel: 'What the place stands for',
+          dna: ['Hard work', 'Perseverance', 'Achievement']
+        },
+
+        irl: {
+          label: 'The IRL',
+          title: 'A dining room and a museum, around one table.',
+          body: 'The new venture of Bulgarian football legend Krasimir Balakov combines a sophisticated yet welcoming restaurant with a museum space: a retrospective of a career that became a benchmark for excellence.',
+          device: 'switcher',
+          states: [
+            { key: 'child', label: 'The restaurant', text: 'Sophisticated yet welcoming. Mediterranean flavours, with a touch or two of home.' },
+            { key: 'parent', label: 'The museum', text: 'A career retrospective, from Etar to the 1994 FIFA World Cup and on into coaching.' },
+            { key: 'family', label: 'Around the table', text: 'Where family tradition continues, and new traditions begin.' },
+            { key: 'community', label: 'The legend', text: 'An iconic figure whose achievements and dedication have inspired generations.' }
+          ],
+          images: {
+            left: { id: 'c03b98_9cab8cff78ad413883050c430eb3e229~mv2.jpg', file: 'cb-kitchen-arches', alt: 'A long table in front of brick arches framing the open kitchen', ratio: 1892 / 1266, slot: 'cb-kitchen-arches' },
+            right: { id: 'c03b98_590d6d5d68f14f47a1e2d2f1e178b182~mv2.jpg', file: 'cb-museum-wall', alt: 'The museum wall: signed plates in a lit grid around a golden trophy', ratio: 2692 / 1196, slot: 'cb-museum-wall', position: '32% 50%' },
+            family: { id: 'c03b98_08f89419cde74a99a9fb75904f1736d4~mv2.jpg', file: 'cb-private-room', alt: 'A private dining room with a table inlaid with football pitch lines', ratio: 1902 / 1266, slot: 'cb-private-room' },
+            community: { id: 'c03b98_4b714474258f471689eddfc53fc403ad~mv2.jpg', file: 'cb-poster', alt: 'A large black and white photograph of Krasimir Balakov on a brick wall above the tables', ratio: 890 / 1262, slot: 'cb-poster', position: '50% 35%' }
+          }
+        },
+
+        story: {
+          label: 'The story',
+          title: 'A wine cellar of personal stories.',
+          body: 'Much like a wine cellar tells the story of its aged wines, Casa Bala tells personal stories that mature with dignity over time. Luxury here is tranquillity, elegance and refinement in every detail.',
+          device: 'materials',
+          materials: [
+            { name: 'Brick', swatch: '#8E4A35', text: 'The central narrative element. A symbol of foundations, resilience and an authentic personality.' },
+            { name: 'Wood and textiles', swatch: '#7A5A3F', text: 'Timber finishes and warm textiles soften the raw brick: sophistication with genuine comfort.' },
+            { name: 'Light', swatch: '#C9A06A', text: 'Subtle lighting draws the guest to the experience and leaves the design in soft shadow.' },
+            { name: 'Concrete, metal and decorative glass', swatch: '#8C9393', text: 'Authentic materials that turn each corner into an intimate retreat.' }
+          ]
+        },
+
+        structure: {
+          label: 'From story to structure',
+          title: 'Brick is not an effect. It is the foundation.',
+          device: 'bricks',
+          wallCaption: 'A career, built brick by brick.',
+          // Listed from the foundation upwards
+          courses: [
+            { title: 'Etar', text: 'Where it began.' },
+            { title: '1994 FIFA World Cup', text: 'A career that became a benchmark.' },
+            { title: 'The coaching career', text: 'The story continues.' },
+            { title: 'Casa Bala', text: 'Traditions do not end. They evolve.', top: true }
+          ],
+          heads: ['We believed', 'So we designed', 'So guests'],
+          rows: [
+            ['A life and career built brick by brick.', 'Exposed brick as the central narrative material.', 'Feel the strong foundations behind the name.'],
+            ['Personal stories mature with dignity, like aged wine.', 'A restaurant with a museum space, conceived like a wine cellar.', 'Dine alongside the story of a career.'],
+            ['Luxury is tranquillity, not display.', 'Subtle lighting that leaves the design in soft shadow.', 'Stay focused on the experience itself.'],
+            ['Sophistication and comfort can coexist.', 'Timber finishes and warm textiles that soften the raw brick.', 'Find elegance with a touch or two of home.'],
+            ['Traditions do not end. They evolve.', 'A family table with Mediterranean flavours.', 'Continue family traditions and begin new ones.']
+          ]
+        },
+
+        place: {
+          label: 'The place',
+          title: 'Casa Bala.',
+          images: [
+            { id: 'c03b98_0c9427f4320e459ab857541e38937278~mv2.jpg', file: 'cb-wine-wall', alt: 'The bar with a backlit wall of wine bottles under arched pendant lights', ratio: 1892 / 1258, caption: 'Like a wine cellar', size: 'wide', slot: 'cb-wine-wall' },
+            { id: 'c03b98_ddc3094422144c8cb0409d77efba13a4~mv2.jpg', file: 'cb-bar', alt: 'The bar seen past tables and arched pendant lights', ratio: 896 / 1266, caption: 'Subtle light', size: 'third', slot: 'cb-bar' },
+            { id: 'c03b98_f06a58fbf00e482fa90fbd1863292af9~mv2.jpg', file: 'cb-glass-screen', alt: 'A screen of decorative glass panels in a black metal frame', ratio: 890 / 1262, caption: 'Decorative glass', size: 'third', slot: 'cb-glass-screen' },
+            { id: 'c03b98_c017966324684b8db1dbb09aca6f720d~mv2.jpg', file: 'cb-private-room-glass', alt: 'A private dining table under two woven pendant lights, a glass wall behind', ratio: 892 / 1262, caption: 'The private room', size: 'third', slot: 'cb-private-room-glass' },
+            { id: 'c03b98_7773386c106f4ff7b56b423ff9c273c2~mv2.jpg', file: 'cb-heritage-wall', alt: 'The dining room with a football photograph on the brick wall and a glass screen', ratio: 1896 / 1268, caption: 'Heritage on the walls', size: 'wide', slot: 'cb-heritage-wall' },
+            { id: 'c03b98_b2ca13a9a66f4d4780f8a59fdead14ec~mv2.jpg', file: 'cb-terrace', alt: 'A glazed dining room with tables set for dinner and trees outside', ratio: 1902 / 1264, caption: 'The glazed room', size: 'half', slot: 'cb-terrace' },
+            { id: 'c03b98_8cc550c9fd5746d09a63b3211bd568f7~mv2.jpg', file: 'cb-washroom', alt: 'The washroom with a backlit glass panel wall and brass pendant spheres', ratio: 892 / 1266, caption: 'Refinement in every detail', size: 'half', slot: 'cb-washroom' }
+          ]
+        },
+
+        outcome: {
+          label: 'Around the table',
+          statement: 'A place where family tradition continues, and new traditions begin around the table.',
+          metrics: []
+        }
+      },
+
+      /* ------------------------------------------------------------------
        * SOFIA HIGH SCHOOL · source: FFS deck v9 + live project page
        * ---------------------------------------------------------------- */
       'sofia-high-school': {
@@ -166,6 +276,7 @@
         aliases: ['sofiahighschool'],
         liveSlug: 'sofiahighschool',      // the URL the site uses today. Delete this line after renaming the CMS slug
         name: 'Sofia High School',
+        hidden: true, // replaced by Casa Bala on the site. Set to false to bring it back
         theme: { mode: 'light', accent: '#C4E83B' },
         facts: [
           ['Location', 'Sofia, Bulgaria'],
@@ -268,13 +379,12 @@
         facts: [
           ['Location', 'Jeddah, Saudi Arabia'],
           ['Venue', 'Jeddah circuit'],
-          ['Sector', 'Fan experience'],
-          ['Year', P('TBC')]
+          ['Sector', 'Fan experience']
         ],
         proposition: 'Feel the thrill.',
         why: 'Bring the thrill of race day to everyone.',
-        heroImage: { id: null, file: 'f1-aerial-night', alt: 'Aerial render of the fan zone at night: a lit karting circuit, towers and pavilions linked by glowing paths', ratio: 1902 / 1266, caption: 'Concept render · the fan zone at night', slot: 'f1-aerial-night' },
-        homeImage: { id: null, file: 'f1-big-screen', alt: 'Render of fans gathered in front of a big screen showing a race', ratio: 1892 / 1266, slot: 'f1-big-screen' },
+        heroImage: { id: 'c03b98_9d442ebda71940c380e2df7df768caee~mv2.png', file: 'f1-aerial-night', alt: 'Aerial render of the fan zone at night: a lit karting circuit, towers and pavilions linked by glowing paths', ratio: 1902 / 1266, caption: 'The fan zone at night', slot: 'f1-aerial-night' },
+        homeImage: { id: 'c03b98_fbfa39c83a3748c3b30d9b37f5c579cd~mv2.png', file: 'f1-big-screen', alt: 'Render of fans gathered in front of a big screen showing a race', ratio: 1892 / 1266, slot: 'f1-big-screen' },
 
         question: {
           label: 'The question',
@@ -296,8 +406,8 @@
           body: 'Simulators, live commentary and podium moments, shared with thousands of other fans.',
           device: 'images',
           images: [
-            { id: null, file: 'f1-big-screen', alt: 'Fans watching a race on a big screen under a ring-shaped canopy', ratio: 1892 / 1266, caption: 'Concept render · the race, shared', slot: 'f1-big-screen' },
-            { id: null, file: 'f1-podium-plaza', alt: 'Families in a red and pink plaza with tensile canopies and a podium celebration on screen', ratio: 1900 / 1266, caption: 'Concept render · podium moments', slot: 'f1-podium-plaza' }
+            { id: 'c03b98_fbfa39c83a3748c3b30d9b37f5c579cd~mv2.png', file: 'f1-big-screen', alt: 'Fans watching a race on a big screen under a ring-shaped canopy', ratio: 1892 / 1266, caption: 'The race, shared', slot: 'f1-big-screen' },
+            { id: 'c03b98_979d4a953b764dcabf62911ee83bc744~mv2.png', file: 'f1-podium-plaza', alt: 'Families in a red and pink plaza with tensile canopies and a podium celebration on screen', ratio: 1900 / 1266, caption: 'Podium moments', slot: 'f1-podium-plaza' }
           ]
         },
 
@@ -306,7 +416,7 @@
           title: 'Race day, zone by zone.',
           body: 'The journey through the space follows the story of a race, from the start line to the podium. Each zone is named for a feeling, so the place tells the story as you walk through it.',
           device: 'image',
-          image: { id: null, file: 'f1-karting-start-lights', alt: 'Two visitors watching karts climb a ramp beneath start lights', ratio: 886 / 1260, caption: 'Concept render · karting under the start lights', slot: 'f1-karting-start-lights' }
+          image: { id: 'c03b98_2cf84475c5d44e7fbee7088dbc0c3bde~mv2.png', file: 'f1-karting-start-lights', alt: 'Two visitors watching karts climb a ramp beneath start lights', ratio: 886 / 1260, caption: 'Karting under the start lights', slot: 'f1-karting-start-lights' }
         },
 
         structure: {
@@ -314,11 +424,11 @@
           title: 'Five zones, one race.',
           device: 'track',
           zones: [
-            { name: 'Feel the Thrill', text: P('Lorem ipsum dolor sit amet, consectetur adipiscing elit.') },
-            { name: 'Feel the Heritage', text: P('Lorem ipsum dolor sit amet, consectetur adipiscing elit.') },
-            { name: 'Feel the Build', text: P('Lorem ipsum dolor sit amet, consectetur adipiscing elit.') },
-            { name: 'Feel the Team Spirit', text: P('Lorem ipsum dolor sit amet, consectetur adipiscing elit.') },
-            { name: 'Feel the Win', text: P('Lorem ipsum dolor sit amet, consectetur adipiscing elit.') }
+            { name: 'Feel the Thrill' },
+            { name: 'Feel the Heritage' },
+            { name: 'Feel the Build' },
+            { name: 'Feel the Team Spirit' },
+            { name: 'Feel the Win' }
           ],
           heads: ['We believed', 'So we designed', 'So fans'],
           rows: [
@@ -332,17 +442,13 @@
           label: 'The place',
           title: 'Jeddah, race weekend.',
           images: [
-            { id: null, file: 'f1-entrance-arches', alt: 'Visitors walking through green ribbon arches towards turnstiles, an F1 car on display', ratio: 1898 / 1266, caption: 'Concept render · entrance arches', size: 'wide', slot: 'f1-entrance-arches' },
-            { id: null, file: 'f1-aerial-wheel', alt: 'Aerial render of a zone with a ferris wheel on the waterfront, linked by a yellow path', ratio: 1892 / 1264, caption: 'Concept render · the waterfront zone', size: 'half', slot: 'f1-aerial-wheel' },
-            { id: null, file: 'f1-aerial-purple', alt: 'Aerial render of a purple-floored zone between two large buildings', ratio: 1892 / 1264, caption: 'Concept render · one zone from above', size: 'half', slot: 'f1-aerial-purple' }
+            { id: 'c03b98_3fee396de28442aa9d2be7745b84b6ef~mv2.png', file: 'f1-entrance-arches', alt: 'Visitors walking through green ribbon arches towards turnstiles, an F1 car on display', ratio: 1898 / 1266, caption: 'Entrance arches', size: 'wide', slot: 'f1-entrance-arches' },
+            { id: 'c03b98_29c4c5e898384a408b6a736a65518795~mv2.png', file: 'f1-aerial-wheel', alt: 'Aerial render of a zone with a ferris wheel on the waterfront, linked by a yellow path', ratio: 1892 / 1264, caption: 'The waterfront zone', size: 'half', slot: 'f1-aerial-wheel' },
+            { id: 'c03b98_d22a51eedcbc434b9c659fbce90ed553~mv2.png', file: 'f1-aerial-purple', alt: 'Aerial render of a purple-floored zone between two large buildings', ratio: 1892 / 1264, caption: 'One zone from above', size: 'half', slot: 'f1-aerial-purple' }
           ]
         },
 
-        outcome: {
-          label: 'What it became',
-          statement: P('Lorem ipsum dolor sit amet, consectetur adipiscing elit.'),
-          metrics: []
-        }
+        outcome: null // no verified outcome yet: the chapter is left out
       }
     }
   };
@@ -556,6 +662,30 @@
 .ffs-voice{border-left:3px solid var(--ffs-accent);padding:.25rem 0 .25rem 1.25rem;display:grid;gap:.75rem}
 .ffs-voice q{font-family:var(--font-display);font-size:var(--step-1);line-height:1.3;quotes:'“' '”'}
 .ffs-voice cite{font-style:normal;font-size:var(--step--1);letter-spacing:.1em;text-transform:uppercase;color:var(--ffs-muted)}
+
+/* Materials (Casa Bala) */
+.ffs-materials{display:grid;gap:0;margin-top:clamp(2.5rem,5vw,4rem);border-top:1px solid var(--ffs-rule)}
+.ffs-material{display:grid;grid-template-columns:2.5rem minmax(0,1fr);column-gap:1.25rem;row-gap:.35rem;padding-block:1.4rem;border-bottom:1px solid var(--ffs-rule);align-items:start}
+.ffs-material__swatch{grid-row:span 2;width:2.5rem;aspect-ratio:1;clip-path:var(--skew)}
+.ffs-material h3{font-family:var(--font-display);font-weight:400;font-size:var(--step-1);line-height:1.2}
+.ffs-material p{color:var(--ffs-muted);max-width:var(--measure)}
+@media (min-width:900px){.ffs-material{grid-template-columns:3rem minmax(0,1fr) minmax(0,1.4fr);column-gap:2.5rem}.ffs-material__swatch{grid-row:auto;width:3rem}}
+
+/* Brick wall (Casa Bala): courses laid from the foundation up */
+.ffs-wall{margin:0 0 clamp(3rem,6vw,6rem)}
+.ffs-wall__courses{display:flex;flex-direction:column-reverse;gap:6px}
+.ffs-course{display:grid;grid-template-columns:.5fr 2fr .5fr;gap:6px}
+.ffs-course:nth-child(even){grid-template-columns:1fr 2fr 0fr}
+.ffs-course:nth-child(even) .ffs-brick--fill:last-child{display:none}
+.ffs-brick{background:#7A3F2D;min-height:4.25rem;border-radius:1px;box-shadow:inset 0 -2px 0 rgba(0,0,0,.25)}
+.ffs-brick--fill{background:#5E3123}
+.ffs-brick--label{display:grid;align-content:center;gap:.15rem;padding:.75rem 1.1rem;color:#F3EDE3;min-width:0}
+.ffs-brick--label b{font-family:var(--font-display);font-weight:400;font-size:var(--step-1);line-height:1.15}
+.ffs-brick--label span{font-size:.92rem;opacity:.85}
+.ffs-course--top .ffs-brick--label{background:var(--ffs-accent);color:#1F1C19}
+@media (min-width:900px){.ffs-brick{min-height:5.5rem}.ffs-course{grid-template-columns:1fr 1.6fr 1fr}.ffs-course:nth-child(even){grid-template-columns:.5fr 1.6fr 1.5fr}.ffs-course:nth-child(even) .ffs-brick--fill:last-child{display:block}}
+.ffs-motion .ffs-course{transition:opacity var(--d2) var(--ease),transform var(--d2) var(--ease);transition-delay:calc(var(--i) * 260ms)}
+.ffs-motion .ffs-wall:not(.is-in) .ffs-course{opacity:0;transform:translateY(-28px)}
 
 /* 06 Story to structure */
 .ffs-s2s{background:var(--ffs-lime);color:var(--ffs-ink);--ffs-muted:#3E4A14;--ffs-rule:rgba(31,28,25,.28);--ffs-slot:#B3D533}
@@ -798,7 +928,10 @@
       if (this._done) return; this._done = true;
       injectOnce();
       const base = this.getAttribute('base-url') || '/projects/';
-      const order = (this.getAttribute('projects') || FFS_DATA.order.join(',')).split(',').map((s) => s.trim()).filter(Boolean);
+      const attr = this.getAttribute('projects');
+      const order = attr
+        ? attr.split(',').map((s) => s.trim()).filter(Boolean)
+        : FFS_DATA.order.filter((k) => !FFS_DATA.projects[k].hidden);
       const h = FFS_DATA.home;
       const rows = order.map(findProject).filter(Boolean).map((p, i) => `
         <li>
@@ -865,8 +998,9 @@
       }
       this.style.display = '';
       const base = this.getAttribute('base-url') || '/projects/';
-      const idx = FFS_DATA.order.indexOf(p.slug);
-      const next = findProject(FFS_DATA.order[(idx + 1) % FFS_DATA.order.length]);
+      const live = FFS_DATA.order.filter((k) => !FFS_DATA.projects[k].hidden || k === p.slug);
+      const idx = live.indexOf(p.slug);
+      const next = findProject(live[(idx + 1) % live.length]);
       const id = (s) => `ffs-${p.slug}-${s}`;
 
       const chapters = [];
@@ -971,6 +1105,10 @@
         storyDevice = `<div class="ffs-voices" style="margin-top:clamp(2.5rem,5vw,4rem)">${st.voices.map((v) => `
           <blockquote class="ffs-voice" data-reveal><q>${t(v.quote)}</q><cite>${t(v.who)}</cite></blockquote>`).join('')}</div>`;
       }
+      if (st.device === 'materials') {
+        storyDevice = `<ul class="ffs-materials" role="list">${st.materials.map((m) => `
+          <li class="ffs-material" data-reveal><span class="ffs-material__swatch" style="background:${esc(m.swatch)}" aria-hidden="true"></span><h3>${esc(m.name)}</h3><p>${t(m.text)}</p></li>`).join('')}</ul>`;
+      }
       if (st.device === 'image') {
         storyDevice = `<figure class="ffs-story__img" data-reveal>
           ${frame(st.image, { sizes: '(min-width:900px) 40vw, 100vw', shape: true, settle: true }).replace('class="ffs-frame', `style="aspect-ratio:${st.image.ratio || 0.75}" class="ffs-frame`)}
@@ -1002,9 +1140,20 @@
           </div>
           <p class="ffs-gb__note">Illustrative diagram, not to scale. <span class="ffs-ph">To be redrawn from the SGI plan.</span></p>
         </div>`;
+      } else if (s.device === 'bricks') {
+        sDevice = `<figure class="ffs-s2s__device ffs-wall" data-watch>
+          <ol class="ffs-wall__courses" role="list" aria-label="${esc(s.wallCaption)} From the foundation up.">${s.courses.map((c, i) => `
+            <li class="ffs-course${c.top ? ' ffs-course--top' : ''}" style="--i:${i}">
+              <span class="ffs-brick ffs-brick--fill" aria-hidden="true"></span>
+              <span class="ffs-brick ffs-brick--label"><b>${esc(c.title)}</b><span>${t(c.text)}</span></span>
+              <span class="ffs-brick ffs-brick--fill" aria-hidden="true"></span>
+            </li>`).join('')}
+          </ol>
+          <figcaption class="ffs-cap">${esc(s.wallCaption)}</figcaption>
+        </figure>`;
       } else if (s.device === 'track') {
         sDevice = `<div class="ffs-s2s__device"><ol class="ffs-track" role="list" data-watch>${s.zones.map((z) => `
-          <li class="ffs-stop"><span class="ffs-stop__z"></span><h3>${esc(z.name)}</h3><p>${t(z.text)}</p></li>`).join('')}</ol></div>`;
+          <li class="ffs-stop"><span class="ffs-stop__z"></span><h3>${esc(z.name)}</h3>${z.text ? `<p>${t(z.text)}</p>` : ''}</li>`).join('')}</ol></div>`;
       }
       const ledger = `
         <div class="ffs-ledger" role="table" aria-label="${esc(s.title)}">
@@ -1041,7 +1190,7 @@
 
       /* 08 Outcome */
       const o = p.outcome;
-      const outcomeHtml = ch('outcome', o.label, `
+      const outcomeHtml = !o ? '' : ch('outcome', o.label, `
         <section class="ffs-outcome ffs-section" data-ch aria-labelledby="${id('out-h')}">
           <div class="ffs-wrap" data-reveal>
             <p class="ffs-label">${esc(o.label)}</p>
